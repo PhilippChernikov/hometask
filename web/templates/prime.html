@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+<p>Введите число</p>
+
+<form action="/prime" method="GET">
+  <input type="number" value="{{que}}" name="num" />
+  <input type="submit" value="Нажмите сюда">
+</form>
+<p>{{que}} - {{ans}}</p>
+{% endblock %}
